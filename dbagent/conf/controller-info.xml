@@ -14,20 +14,20 @@
     This is the same host that you use to access the AppDynamics browser based User interface.
     This can be overridden with an environment variable 'CONTROLLER_HOST_NAME' or
     the system property '-Dappdynamics.controller.hostName' -->
-    <controller-host></controller-host>
+    <controller-host>cubits201902030158008.saas.appdynamics.com</controller-host>
 
     <!-- This is the http(s) port of the AppDynamics Controller , If 'controller-ssl-enabled' below is set to true, you must
     specify the HTTPS port of the Controller, otherwise specify the HTTP port. The default values are 8090 for HTTP and 8181 for HTTPS
     This is the same port that you use to access the AppDynamics browser based User interface.
     This can be overridden with an environment variable 'APPDYNAMICS_CONTROLLER_PORT' or
     the system property '-Dappdynamics.controller.port' -->
-    <controller-port></controller-port>
+    <controller-port>443</controller-port>
 
     <!-- This specifies if the AppDynamics agent should use SSL(HTTPS) to connect to the Controller. If you set this to true,
     the controller port property above should be set to the HTTPs port of the Controller.
     This can be overridden with an environment variable 'APPDYNAMICS_CONTROLLER_SSL_ENABLED' or
     the system property '-Dappdynamics.controller.ssl.enabled' -->
-    <controller-ssl-enabled>false</controller-ssl-enabled>
+    <controller-ssl-enabled>true</controller-ssl-enabled>
 
     <!-- If this value is set to true, it indicates all the passwords and access-keys must be encrypted.
     If this value is false or undefined, passwords and access-keys will be in plain-text.
@@ -44,9 +44,9 @@
     If you are running in single-tenant mode (the default) there is no need to configure these values.
     This can be overridden with an environment variable 'APPDYNAMICS_AGENT_ACCOUNT_NAME' or
     the system property '-Dappdynamics.agent.accountName' -->
-    <account-name></account-name>
+    <account-name>cubits201902030158008</account-name>
     <!-- This can be overridden with an environment variable 'APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY' or
     the system property '-Dappdynamics.agent.accountAccessKey'
     This account-access-key must be encrypted if 'use-encrypted-credentials' is set to true -->
-    <account-access-key></account-access-key>
+    <account-access-key>hjxuw1w85jzs</account-access-key>
 </controller-info>

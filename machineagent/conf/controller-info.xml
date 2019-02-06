@@ -11,14 +11,14 @@
     myhost.abc.com). This is the same host that you use to access the AppDynamics browser-based User interface. This can
     be overridden with the environment variable 'CONTROLLER_HOST_NAME' or the system property
     '-Dappdynamics.controller.hostName' -->
-    <controller-host></controller-host>
+    <controller-host>cubits201902030158008.saas.appdynamics.com</controller-host>
 
     <!-- This is the http(s) port of the AppDynamics Controller. If 'controller-ssl-enabled' (below) is set to true, you
     must specify the HTTPS port of the Controller; otherwise, specify the HTTP port. The default values are 8090 for
     HTTP and 8181 for HTTPS. This is the same port that you use to access the AppDynamics browser-based User interface.
     This can be overridden with the environment variable 'APPDYNAMICS_CONTROLLER_PORT' or the system property
     '-Dappdynamics.controller.port' -->
-    <controller-port></controller-port>
+    <controller-port>443</controller-port>
 
     <!-- This specifies if the AppDynamics agent should use SSL (HTTPS) to connect to the Controller. If you set this to
     true, the controller port property above should be set to the HTTPS port of the Controller. This can be overridden
@@ -30,7 +30,7 @@
     1) Enables the agent to execute tasks specified in AppDynamics Orchestration workflows.
     2) Enables the agent to resolve the AppDynamics Controller host and port when the host machine where this agent
        resides is created through AppDynamics Orchestration. -->
-    <enable-orchestration>false</enable-orchestration>
+    <enable-orchestration>true</enable-orchestration>
 
     <!-- The Machine Agent uses the Java API to get the host name of the agent. The results from the API can be
     inconsistent, and the same JVM can sometimes return a different value for the same machine each time the machine
@@ -47,13 +47,13 @@
     <!-- This key is generated at installation time and can be found by viewing the license information in the
     controller settings. This can be overridden with the environment variable 'APPDYNAMICS_AGENT_ACCOUNT_ACCESS_KEY' or
     the system property '-Dappdynamics.agent.accountAccessKey' -->
-    <account-access-key></account-access-key>
+    <account-access-key>hjxuw1w85jzs</account-access-key>
 
     <!-- If the AppDynamics Controller is running in multi-tenant mode or you are using the AppDynamics SaaS Controller,
     you must specify the account name for this agent to authenticate with the controller. If you are running in
     single-tenant mode (the default) there is no need to configure this value. This can be overridden with the
     environment variable 'APPDYNAMICS_AGENT_ACCOUNT_NAME' or the system property '-Dappdynamics.agent.accountName' -->
-    <account-name></account-name>
+    <account-name>cubits201902030158008</account-name>
 
     <!-- If this agent is licensed for Server Monitoring, set this flag to 'true' to enable Server Monitoring expanded
     metrics. This can be overridden with the environment variable 'APPDYNAMICS_SIM_ENABLED' or the system property

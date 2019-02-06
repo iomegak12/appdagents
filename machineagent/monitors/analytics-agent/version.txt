@@ -1,0 +1,6 @@
+buildName=18396-4.5.2.next-Analytics
+buildHash=caa68a8d7d6dbcd5703147a0d9c6b6687c1a513d
+buildTimestamp=2018-08-17T02:56:21+0000
+buildNumber=4.5.2.18396
+jobName=Analytics
+version=4.5.2.18396
